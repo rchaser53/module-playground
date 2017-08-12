@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tsToTs": "npm run tsc && node lib/importTypeScriptModule.js",
+    "esToTs": "npm run tsc && node lib/importEcmaScriptModule.js",
+    "commonjsToTs": "npm run tsc && node lib/importCommonJsModule.js",
     "tsc": "tsc -p ."
   },
   "repository": {
