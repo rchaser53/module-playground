@@ -1,0 +1,16 @@
+// commonjs => ecmascript
+//          => commonjs
+//          => typescript
+
+// ecmascript => ecmascript
+//            => commonjs
+//            => typescript
+
+// typescript => ecmascript     /** これは無理 */
+//            => commonjs       /** これは無理 */
+//            => typescript
+
+
+
+TypeScript と webpack 2 を組み合わせた時、 import Vue = require('vue') は
+Vue そのものではなく総合的な ES モジュールのオブジェクトを返すからです。
